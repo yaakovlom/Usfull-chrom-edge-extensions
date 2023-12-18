@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "AdSkipper",
+    "version": "1.0",
+    "description": "Skip ads on your news website",
+    "action": {
+        "default_title": "Skip ads on your news website"
+      },
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    }
+  }
+  
