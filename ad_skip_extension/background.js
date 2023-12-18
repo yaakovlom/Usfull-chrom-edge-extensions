@@ -3,5 +3,4 @@ chrome.action.onClicked.addListener((tab) => {
     target: {tabId: tab.id},
     files: ['content.js']
   });
-  console.log("test")
 });
