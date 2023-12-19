@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Anti sticky player",
+    "version": "1.0",
+    "description": "Disable sticky video player",
+    "action": {
+        "default_title": "Disable sticky video player"
+      },
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    }
+  }
+  
