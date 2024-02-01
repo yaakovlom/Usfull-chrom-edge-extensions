@@ -16,7 +16,7 @@ if (currentUrl.includes("kore.co.il")) {
 } else if (currentUrl.includes("jdn.co.il")) {
     for (elementToClick of document.querySelectorAll("a.undefined.is-active")) {
         if (elementToClick && ! elementToClick.parentElement.parentElement.parentElement.parentElement.classList.contains("last-video")) {
-            clickOnElement(elementToClick.parentElement.lastChild);
+            clickOnElement(elementToClick.parentElement.children[1]);
             }
     }
 }
