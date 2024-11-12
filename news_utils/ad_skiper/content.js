@@ -8,15 +8,16 @@ function clickOnElement(elementToClick) {
 }
 
 if (currentUrl.includes("kore.co.il")) {
-    for (elementToClick of document.querySelectorAll("div.skipad.hidden")) {
-        if (elementToClick && ! elementToClick.parentElement.firstChild.firstElementChild.firstElementChild.firstElementChild.classList.contains("fa-play")) {
+    for (elementToClick of document.querySelectorAll("#adSkipButton")) {
+        if (elementToClick) {
+            elementToClick.className="vast-skip-button enabled"
             clickOnElement(elementToClick);
         }
     }
 } else if (currentUrl.includes("jdn.co.il")) {
     for (elementToClick of document.querySelectorAll("a.undefined.is-active")) {
         if (elementToClick && ! elementToClick.parentElement.parentElement.parentElement.parentElement.classList.contains("last-video")) {
-            clickOnElement(elementToClick.parentElement.lastChild);
+            clickOnElement(elementToClick.parentElement.children[1]);
             }
     }
 }
