@@ -8,9 +8,9 @@ function clickOnElement(elementToClick) {
 }
 
 if (currentUrl.includes("kore.co.il")) {
-    for (elementToClick of document.querySelectorAll("#adSkipButton")) {
-        if (elementToClick) {
-            elementToClick.className="vast-skip-button enabled"
+    for (elementToClick of document.querySelectorAll("div.preroll-skip-button")) {
+        if (elementToClick && elementToClick.parentElement.classList.contains("vjs-playing")) {
+            elementToClick.classList.add("enabled");
             clickOnElement(elementToClick);
         }
     }
